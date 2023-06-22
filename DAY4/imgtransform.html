@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-container{
+            position: relative;
+            width:300px;
+
+        }
+        .image{
+            display: block;
+            width: 200px;
+            height: 100px;
+            transition: 3s;
+        }
+        .overlay{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: 3s;
+            height: 100px;
+            width: 200px;
+            background-color: burlywood;
+
+        }
+        .text{
+            color: black;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            font-size: medium;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+        }
+        .img-container:hover .overlay{opacity: 1 ;}
+        .img-container:hover .image{transform: translate(400px, 300px) rotate(360deg);}
+        </style>
+</head>
+<body>
+    <div class="img-container">
+        <img src="pexels-maxime-francis-2246476.jpg" alt="img" class="image">
+        <div class="overlay">
+            <div class="text">Image overlay effect</div>
+        </div>
+    </div>
+</body>
+</html>
