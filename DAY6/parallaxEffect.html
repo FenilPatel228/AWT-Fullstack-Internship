@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect Demo</title>
+    <style>
+        .parallax{
+            
+            background-image: url("WhatsApp Image 2023-06-23 at 22.33.06.jpg");
+            min-height: 800px;
+            background-position: center;
+            width:100%;
+            background-size:100%;
+            background-attachment: fixed;
+            background-repeat: repeat;
+
+            
+        }
+        .antDiv{
+            background-color:#212121;
+            top:0;
+            left: 0;
+            right: 0;
+            height: 450px;
+            width: 100%;
+            font-size: 34px;
+            font-style: oblique;
+            text-align: center;
+            color:rgb(255, 255, 255);
+            background-image: linear-gradient(rgba(205, 237, 23, 0.568),  rgba(17, 226, 202, 0.746), rgba(255, 0, 93, 0.625));
+        }
+        .next{
+            background-image: url("WhatsApp Image 2023-06-23 at 22.33.21.jpg");
+            
+        }
+        .videoo {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: 100%;
+            min-height: 50%;
+            min-width: 100%;
+            z-index: -9999;
+        }
+        .videoo figure {
+            margin: 8px;
+            position: relative;
+        }
+        .videoo figure h1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-right: 3px solid #fff;
+            padding: 5px 10px 5px 5px;
+        }
+        .videoo video {
+            width: 100%;
+            max-width: 100%;
+            
+        }
+        .stretch {
+            background-image: linear-gradient(#2ed9e2c2,#be498083,#9546adcb);
+            background-color: #fff;
+            text-align: center;
+            height:200px;
+            min-width: 100%;
+            background-size: cover;
+            margin-top: 800px;
+            left:0;
+            right:0;
+        }
+        .stretch h1 {
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body style="background-color:#212121"> 
+    <div class="parallax"></div>
+    <div class="antDiv">
+        Demo for Parallax Effectt
+    </div>
+    <div class="videoo">
+        <figure>
+            <video loop muted="muted" autoplay>
+              <source src="pexels-tom-fisk-2547258-960x540-30fps.mp4"/>
+            </video>
+        </figure>
+    </div>
+    <div class="stretch">
+      <div class="txt">
+      <h1>Some heading</h1>
+      <p>Content Goes Here..</p>
+        </div>
+    </div>
+    <div class="parallax next"></div>
+</body>
+</html>
